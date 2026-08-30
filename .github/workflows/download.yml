@@ -43,7 +43,7 @@ jobs:
       - name: 安装jmcomic（pip）
         if: ${{ github.ref != 'refs/heads/dev' }}
         run: |
-          pip install jmcomic -i https://pypi.org/project --upgrade
+          pip install jmcomic -U
 
       - name: 安装jmcomic（local）
         if: ${{ github.ref == 'refs/heads/dev' }}
